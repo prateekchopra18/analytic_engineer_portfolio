@@ -1,0 +1,16 @@
+contract_id,account_id,opportunity_id,contract_name,contract_status,start_date,end_date,total_contract_value,created_at,updated_at
+CON001,ACC001,OPP001,Acme — Enterprise Automation Suite Y1,Activated,2021-04-01,2022-04-01,120000,2021-03-20,2021-04-01
+CON002,ACC002,OPP002,Bright Horizons — Healthcare Integration,Activated,2021-07-01,2022-07-01,48000,2021-06-25,2021-07-01
+CON003,ACC004,OPP004,Sterling — Finance Data Warehouse,Activated,2020-10-01,2023-10-01,380000,2020-09-10,2020-10-01
+CON004,ACC005,OPP005,Coastal — Logistics ETL Pipeline,Activated,2021-12-01,2022-12-01,96000,2021-11-25,2021-12-01
+CON005,ACC007,OPP007,Pinnacle — Retail BI Platform Y1,Activated,2019-08-01,2022-08-01,540000,2019-07-31,2019-08-01
+CON006,ACC008,OPP008,Orion — Dev Analytics Stack,Activated,2022-05-01,2023-05-01,72000,2022-04-10,2022-05-01
+CON007,ACC010,OPP010,Meridian — Energy Reporting Suite,Activated,2021-01-01,2024-01-01,260000,2020-12-05,2021-01-01
+CON008,ACC011,OPP011,Atlas — Media Analytics,Activated,2021-09-01,2022-09-01,36000,2021-08-20,2021-09-01
+CON009,ACC013,OPP013,Ironclad — Security Analytics,Activated,2022-10-01,2024-10-01,84000,2022-09-15,2022-10-01
+CON010,ACC014,OPP014,Sunrise — Hospitality Data Hub Y1,Activated,2019-05-01,2022-05-01,480000,2019-04-20,2019-05-01
+CON011,ACC001,OPP016,Acme — Renewal + Expansion 2024,Activated,2024-04-01,2025-04-01,144000,2024-03-20,2024-04-01
+CON012,ACC004,OPP017,Sterling — Upsell Advanced Analytics,Activated,2023-07-01,2024-07-01,120000,2023-06-05,2023-07-01
+CON013,ACC007,OPP018,Pinnacle — Multi-Region Expansion,Activated,2023-01-01,2025-01-01,240000,2022-12-01,2023-01-01
+CON014,ACC010,OPP019,Meridian — Renewal 2023,Activated,2024-01-01,2025-01-01,280000,2023-12-05,2024-01-01
+CON015,ACC002,OPP002,Bright Horizons — Renewal 2022,Signed,2022-08-01,2023-08-01,52000,2022-07-15,2022-08-01

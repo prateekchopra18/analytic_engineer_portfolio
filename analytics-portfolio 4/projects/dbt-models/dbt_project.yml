@@ -1,0 +1,46 @@
+name: 'workato_analytics'
+version: '1.0.0'
+config-version: 2
+
+profile: 'workato_analytics'
+
+model-paths: ["models"]
+test-paths:  ["tests"]
+macro-paths: ["macros"]
+docs-paths:  ["docs"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  workato_analytics:
+    staging:
+      +materialized: view
+      +schema: staging
+
+    intermediate:
+      +materialized: ephemeral
+
+    marts:
+      core:
+        +materialized: table
+        +schema: core
+        fct_opportunities:
+          +materialized: incremental
+          +unique_key: opportunity_id
+        fct_platform_usage:
+          +materialized: incremental
+          +unique_key: ['workspace_id', 'snapshot_date']
+      finance:
+        +materialized: incremental
+        +schema: finance
+        fct_arr:
+          +unique_key: ['contract_id', 'arr_month']
+
+vars:
+  # Lookback window for incremental runs
+  incremental_lookback_days: 3
+  # Source database
+  salesforce_database: 'SALESFORCE'
+  workato_database:    'DATA_GENIE'
+  freshdesk_database:  'FRESHDESK'

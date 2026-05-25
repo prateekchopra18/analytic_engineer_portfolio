@@ -1,0 +1,16 @@
+account_id,account_name,account_type,industry,employee_count,billing_country,billing_state,annual_revenue_usd,owner_id,created_at,updated_at
+ACC001,Acme Corporation,Customer,Manufacturing,5200,United States,California,48000000,OWN001,2021-03-15,2024-11-01
+ACC002,Bright Horizons Ltd,Customer,Healthcare,1200,United Kingdom,England,12500000,OWN002,2021-06-22,2024-10-15
+ACC003,Nexus Dynamics,Prospect,Technology,340,United States,New York,8900000,OWN001,2022-01-10,2024-12-01
+ACC004,Sterling Financial Group,Customer,Finance,8700,United States,Illinois,210000000,OWN003,2020-09-05,2024-09-30
+ACC005,Coastal Logistics Inc,Customer,Transportation,2100,United States,Florida,31000000,OWN002,2021-11-19,2024-11-20
+ACC006,Verdant Farms Co,Prospect,Agriculture,450,Canada,Ontario,5600000,OWN004,2023-02-14,2024-12-10
+ACC007,Pinnacle Retail Group,Customer,Retail,12400,United States,Texas,560000000,OWN003,2019-07-30,2024-10-01
+ACC008,Orion Software Labs,Customer,Technology,780,United States,Washington,22000000,OWN001,2022-04-08,2024-11-15
+ACC009,BlueSky Consulting,Prospect,Professional Services,95,Australia,New South Wales,3200000,OWN004,2023-07-21,2024-12-05
+ACC010,Meridian Energy Corp,Customer,Energy,3600,United States,Texas,145000000,OWN002,2020-12-01,2024-08-20
+ACC011,Atlas Publishing House,Customer,Media,620,United Kingdom,Scotland,9100000,OWN003,2021-08-17,2024-09-10
+ACC012,Quantum Bio Sciences,Prospect,Biotech,210,United States,Massachusetts,7400000,OWN001,2023-03-29,2024-12-15
+ACC013,Ironclad Security Inc,Customer,Cybersecurity,1050,United States,Virginia,18700000,OWN004,2022-09-12,2024-10-28
+ACC014,Sunrise Hotels & Resorts,Customer,Hospitality,9800,United States,Nevada,390000000,OWN002,2019-04-15,2024-11-05
+ACC015,TerraForm Construction,Prospect,Construction,680,Canada,British Columbia,14200000,OWN003,2023-05-06,2024-12-20

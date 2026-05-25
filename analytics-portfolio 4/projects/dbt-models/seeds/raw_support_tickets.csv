@@ -1,0 +1,21 @@
+ticket_id,account_id,subject,category,priority,status,created_at,first_response_at,resolved_at,csat_score,updated_at
+TKT001,ACC001,Recipe trigger not firing on schedule,Technical,High,Resolved,2024-10-03 09:12:00,2024-10-03 10:05:00,2024-10-04 14:30:00,5,2024-10-04 14:30:00
+TKT002,ACC004,Cannot connect to Snowflake — auth error,Technical,Urgent,Resolved,2024-10-05 14:22:00,2024-10-05 14:45:00,2024-10-05 18:10:00,4,2024-10-05 18:10:00
+TKT003,ACC007,Billing discrepancy on October invoice,Billing,Medium,Resolved,2024-10-08 11:05:00,2024-10-08 13:00:00,2024-10-10 09:00:00,3,2024-10-10 09:00:00
+TKT004,ACC002,How to use lookup tables in recipes,How-To,Low,Resolved,2024-10-09 16:30:00,2024-10-10 09:15:00,2024-10-11 11:00:00,5,2024-10-11 11:00:00
+TKT005,ACC010,Job errors on Salesforce connector v3.2,Technical,High,Resolved,2024-10-12 08:44:00,2024-10-12 09:30:00,2024-10-13 17:00:00,4,2024-10-13 17:00:00
+TKT006,ACC013,Request to add new team member,Account,Low,Resolved,2024-10-15 10:00:00,2024-10-15 14:00:00,2024-10-16 10:00:00,5,2024-10-16 10:00:00
+TKT007,ACC014,API rate limit exceeded on Salesforce,Technical,High,Resolved,2024-10-18 13:55:00,2024-10-18 14:30:00,2024-10-19 12:00:00,4,2024-10-19 12:00:00
+TKT008,ACC007,Duplicate records appearing in CRM sync,Technical,Urgent,Resolved,2024-10-20 09:00:00,2024-10-20 09:20:00,2024-10-21 15:30:00,5,2024-10-21 15:30:00
+TKT009,ACC005,Need help setting up batch processing,How-To,Medium,Resolved,2024-10-22 14:10:00,2024-10-23 09:00:00,2024-10-24 11:00:00,3,2024-10-24 11:00:00
+TKT010,ACC008,Recipe stopped running after update,Technical,High,Resolved,2024-10-25 10:30:00,2024-10-25 11:00:00,2024-10-26 09:00:00,4,2024-10-26 09:00:00
+TKT011,ACC001,Renewal pricing question,Billing,Medium,Resolved,2024-11-01 09:00:00,2024-11-01 11:30:00,2024-11-03 14:00:00,5,2024-11-03 14:00:00
+TKT012,ACC004,How to implement error notifications,How-To,Low,Resolved,2024-11-05 15:00:00,2024-11-06 09:00:00,2024-11-07 13:00:00,5,2024-11-07 13:00:00
+TKT013,ACC010,Dashboard not reflecting latest data,Technical,Medium,Open,2024-11-10 11:20:00,2024-11-10 13:00:00,,, 2024-12-01 09:00:00
+TKT014,ACC007,Expand API usage limits for Q4,Account,High,In Progress,2024-11-15 10:00:00,2024-11-15 10:45:00,,,2024-12-05 10:00:00
+TKT015,ACC013,Security audit — export activity logs,Technical,Medium,Resolved,2024-11-18 14:00:00,2024-11-18 15:30:00,2024-11-20 12:00:00,4,2024-11-20 12:00:00
+TKT016,ACC014,Performance degradation on large batches,Technical,Urgent,Open,2024-12-01 08:30:00,2024-12-01 08:55:00,,,2024-12-10 09:00:00
+TKT017,ACC001,Training session request for new hires,How-To,Low,Resolved,2024-12-03 14:00:00,2024-12-04 09:30:00,2024-12-05 11:00:00,5,2024-12-05 11:00:00
+TKT018,ACC005,CSV import failing for large files,Technical,High,In Progress,2024-12-08 10:45:00,2024-12-08 11:30:00,,,2024-12-15 14:00:00
+TKT019,ACC002,Incorrect data mapping in Salesforce sync,Technical,High,Resolved,2024-12-10 09:00:00,2024-12-10 09:45:00,2024-12-11 16:00:00,4,2024-12-11 16:00:00
+TKT020,ACC008,Feature request — conditional branching UI,Feature Request,Low,Open,2024-12-15 13:00:00,2024-12-16 09:00:00,,,2024-12-20 10:00:00

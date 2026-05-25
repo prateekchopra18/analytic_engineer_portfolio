@@ -1,0 +1,99 @@
+version: 2
+
+sources:
+  - name: salesforce
+    database: SALESFORCE
+    schema: PUBLIC
+    tables:
+      - name: account
+      - name: lead
+      - name: opportunity
+      - name: contract
+
+models:
+  - name: stg_salesforce__accounts
+    description: >
+      One row per Salesforce account. Renames and recasts raw source columns.
+      No business logic — use marts/core/dim_accounts for enriched account data.
+    meta:
+      owner: prateekchopra
+      team: BT_BUSINESS_INTELLIGENCE
+      sla: daily
+    columns:
+      - name: account_id
+        description: Salesforce Account ID (primary key)
+        tests:
+          - not_null
+          - unique
+      - name: account_name
+        description: Account display name
+        tests:
+          - not_null
+      - name: account_type
+        description: Salesforce account type classification
+        tests:
+          - accepted_values:
+              values: ['Customer', 'Prospect', 'Partner', 'Reseller', 'Competitor', 'Other']
+      - name: updated_at
+        description: Last modified timestamp from Salesforce
+        tests:
+          - not_null
+
+  - name: stg_salesforce__leads
+    description: >
+      One row per Salesforce lead. Includes conversion status and converted
+      account/opportunity references.
+    meta:
+      owner: prateekchopra
+      team: BT_BUSINESS_INTELLIGENCE
+      sla: daily
+    columns:
+      - name: lead_id
+        description: Salesforce Lead ID (primary key)
+        tests:
+          - not_null
+          - unique
+      - name: is_converted
+        description: Boolean — true if lead was converted to account/opportunity
+        tests:
+          - not_null
+      - name: converted_account_id
+        description: FK to stg_salesforce__accounts when lead is converted
+        tests:
+          - relationships:
+              to: ref('stg_salesforce__accounts')
+              field: account_id
+              where: "is_converted = TRUE"
+
+  - name: stg_salesforce__opportunities
+    description: One row per Salesforce opportunity.
+    meta:
+      owner: prateekchopra
+      team: BT_BUSINESS_INTELLIGENCE
+      sla: daily
+    columns:
+      - name: opportunity_id
+        description: Salesforce Opportunity ID (primary key)
+        tests:
+          - not_null
+          - unique
+      - name: stage_name
+        description: Current pipeline stage
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - 'Prospecting'
+                - 'Qualification'
+                - 'Needs Analysis'
+                - 'Value Proposition'
+                - 'Decision Makers'
+                - 'Perception Analysis'
+                - 'Proposal/Price Quote'
+                - 'Negotiation/Review'
+                - 'Closed Won'
+                - 'Closed Lost'
+      - name: amount
+        description: Opportunity ARR value in USD
+        tests:
+          - not_null

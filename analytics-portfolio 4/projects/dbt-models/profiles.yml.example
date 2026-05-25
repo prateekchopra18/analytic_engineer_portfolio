@@ -1,0 +1,26 @@
+workato_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <your_snowflake_account>
+      user: PRATEEKCHOPRA
+      password: <your_password>          # or use key-pair auth
+      role: BT_BUSINESS_INTELLIGENCE
+      database: BT_DEV
+      warehouse: DATA_GENIE_WH
+      schema: PCHOPRA
+      threads: 4
+      client_session_keep_alive: false
+
+    prod:
+      type: snowflake
+      account: <your_snowflake_account>
+      user: DATA_GENIE_API_USER          # service account for prod
+      private_key_path: ~/.ssh/snowflake_private_key.p8
+      role: BT_BUSINESS_INTELLIGENCE
+      database: DATA_GENIE
+      warehouse: DATA_GENIE_WH
+      schema: ANALYTICS
+      threads: 8
+      client_session_keep_alive: false

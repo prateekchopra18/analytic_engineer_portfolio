@@ -1,0 +1,21 @@
+opportunity_id,account_id,opportunity_name,stage_name,is_won,is_closed,close_date,amount,created_at,updated_at
+OPP001,ACC001,Acme — Enterprise Automation Suite,Closed Won,TRUE,TRUE,2021-03-15,120000,2021-01-10,2021-03-15
+OPP002,ACC002,Bright Horizons — Healthcare Integration,Closed Won,TRUE,TRUE,2021-06-22,48000,2021-04-20,2021-06-22
+OPP003,ACC003,Nexus — Platform Trial Expansion,Needs Analysis,FALSE,FALSE,2024-03-31,24000,2022-02-01,2024-12-01
+OPP004,ACC004,Sterling — Finance Data Warehouse,Closed Won,TRUE,TRUE,2020-09-05,380000,2020-07-01,2020-09-05
+OPP005,ACC005,Coastal — Logistics ETL Pipeline,Closed Won,TRUE,TRUE,2021-11-19,96000,2021-09-30,2021-11-19
+OPP006,ACC006,Verdant — Agri Analytics POC,Qualification,FALSE,FALSE,2024-04-30,18000,2023-03-01,2024-12-10
+OPP007,ACC007,Pinnacle — Retail BI Platform,Closed Won,TRUE,TRUE,2019-07-30,540000,2019-05-15,2019-07-30
+OPP008,ACC008,Orion — Dev Analytics Stack,Closed Won,TRUE,TRUE,2022-04-08,72000,2022-02-14,2022-04-08
+OPP009,ACC009,BlueSky — Consulting Dashboard,Proposal/Price Quote,FALSE,FALSE,2024-02-28,15000,2023-07-01,2024-12-05
+OPP010,ACC010,Meridian — Energy Reporting Suite,Closed Won,TRUE,TRUE,2020-12-01,260000,2020-09-18,2020-12-01
+OPP011,ACC011,Atlas — Media Analytics,Closed Won,TRUE,TRUE,2021-08-17,36000,2021-06-01,2021-08-17
+OPP012,ACC012,Quantum — Bio Research Platform,Value Proposition,FALSE,FALSE,2024-05-31,42000,2023-04-01,2024-12-15
+OPP013,ACC013,Ironclad — Security Analytics,Closed Won,TRUE,TRUE,2022-09-12,84000,2022-07-05,2022-09-12
+OPP014,ACC014,Sunrise — Hospitality Data Hub,Closed Won,TRUE,TRUE,2019-04-15,480000,2019-02-01,2019-04-15
+OPP015,ACC015,TerraForm — Construction BI,Negotiation/Review,FALSE,FALSE,2024-06-30,56000,2023-05-15,2024-12-20
+OPP016,ACC001,Acme — Renewal + Expansion 2024,Closed Won,TRUE,TRUE,2024-03-15,144000,2024-01-10,2024-03-15
+OPP017,ACC004,Sterling — Upsell Advanced Analytics,Closed Won,TRUE,TRUE,2023-06-01,120000,2023-04-01,2023-06-01
+OPP018,ACC007,Pinnacle — Multi-Region Expansion,Closed Won,TRUE,TRUE,2022-11-30,240000,2022-09-01,2022-11-30
+OPP019,ACC010,Meridian — Renewal 2023,Closed Won,TRUE,TRUE,2023-12-01,280000,2023-10-01,2023-12-01
+OPP020,ACC013,Ironclad — Renewal 2024,Negotiation/Review,FALSE,FALSE,2024-09-12,90000,2024-07-01,2024-12-01

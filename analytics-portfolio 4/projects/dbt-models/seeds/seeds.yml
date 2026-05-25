@@ -1,0 +1,74 @@
+version: 2
+
+seeds:
+  - name: raw_accounts
+    description: Dummy account master data — 15 fictional companies across industries
+    columns:
+      - name: account_id
+        tests: [not_null, unique]
+      - name: account_name
+        tests: [not_null]
+      - name: account_type
+        tests:
+          - accepted_values:
+              values: ['Customer', 'Prospect', 'Partner', 'Reseller']
+
+  - name: raw_leads
+    description: Dummy lead records — 20 leads, mix of converted and open
+    columns:
+      - name: lead_id
+        tests: [not_null, unique]
+      - name: is_converted
+        tests: [not_null]
+
+  - name: raw_opportunities
+    description: Dummy opportunity pipeline — 20 opps across stages, won/lost/open
+    columns:
+      - name: opportunity_id
+        tests: [not_null, unique]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('raw_accounts')
+              field: account_id
+      - name: amount
+        tests: [not_null]
+
+  - name: raw_contracts
+    description: Dummy contract data — 15 contracts tied to won opportunities
+    columns:
+      - name: contract_id
+        tests: [not_null, unique]
+      - name: contract_status
+        tests:
+          - accepted_values:
+              values: ['Activated', 'Signed', 'Draft', 'Expired', 'Terminated']
+
+  - name: raw_platform_usage
+    description: Dummy platform usage snapshots — monthly per workspace, Oct–Dec 2024
+    columns:
+      - name: workspace_id
+        tests: [not_null]
+      - name: active_recipes
+        tests: [not_null]
+
+  - name: raw_support_tickets
+    description: Dummy support tickets — 20 tickets across categories and priorities
+    columns:
+      - name: ticket_id
+        tests: [not_null, unique]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('raw_accounts')
+              field: account_id
+      - name: priority
+        tests:
+          - accepted_values:
+              values: ['Low', 'Medium', 'High', 'Urgent']
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['Open', 'In Progress', 'Resolved', 'Closed']
