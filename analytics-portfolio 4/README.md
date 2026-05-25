@@ -1,33 +1,92 @@
-# Prateek Chopra — Analytics Engineer Portfolio
+# Prateek Chopra — Data / Analytics Engineer
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  prateek@workato:~$ whoami                              │
-│  > Analytics Engineer · BI · Data Pipelines · SQL       │
-│  prateek@workato:~$ ls ./skills                         │
-│  > Snowflake  Workato  Python  Sigma  SQL  dbt          │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## About
 
-Analytics Engineer at **Workato** (Business Intelligence team), working across the full data stack — from raw source ingestion to semantic layer design and executive dashboards.
+Data Engineer with **4+ years** building production-grade data pipelines, dimensional models, and AI-assisted analytics platforms across **fintech, media, and enterprise SaaS**. Deep expertise in Snowflake, SQL, Python, dbt, and AWS/GCP — with a consistent track record of **40–45% Snowflake cost reduction**, full pipeline automation, and delivering self-serve analytics that eliminate SQL dependency for business teams.
 
-- 🏢 **Team**: BT_BUSINESS_INTELLIGENCE @ Workato
-- 🔧 **Platforms**: Snowflake · Sigma · Workato · Python
-- 📊 **Focus**: Self-serve analytics, ETL automation, semantic modeling
+- 📍 Delhi, India
+- 📧 prateekchopra18@gmail.com
+- 🏢 Analytics Engineer (Dec 2025 – Present)
+- 🎓 B.Tech Computer Science — IEC College of Engineering (2017–2021)
+
 
 ---
 
-## Projects
+## Key Achievements
+
+| Metric | Result |
+|--------|--------|
+| 🏆 Snowflake cost reduction | **30–45%** via Sigma monitoring, warehouse right-sizing, clustering, query rewrites |
+| ⚡ Manual effort reduction | **60%** via Workato automation (ingestion triggers, RBAC, data quality) |
+| 📊 Dashboard migration | **12 Tableau dashboards** SQL Server → Snowflake in under 4 months |
+| 🤖 Zero-SQL BI | Data Genie → Slack: business teams query Snowflake in plain English |
+| 🕓 SCD Type 2 | Full historical audit trails and point-in-time analytics on key entities |
+
+---
+
+## Portfolio Projects
 
 | # | Project | Stack | Description |
 |---|---------|-------|-------------|
-| 01 | [Salesforce OBT Analytics](./projects/snowflake-analytics/) | Snowflake · SQL | Denormalized One Big Table for Salesforce leads, opps & contracts |
-| 02 | [Workato Usage Pipeline](./projects/workato-pipelines/) | Workato · Snowflake | Recipe & connection usage ETL with incremental loading |
-| 03 | [Semantic Model Matching](./projects/python-engineering/) | Python · YAML | Automated semantic layer column matching for Data Genie |
-| 04 | [BI Dashboard Suite](./projects/bi-dashboards/) | Sigma · Snowflake | Executive dashboards for ARR, pipeline & platform health |
-| 05 | [dbt Models](./projects/dbt-models/) | dbt · Snowflake · Salesforce · Workato | Multi-source staging → marts pipeline with incremental models & tests |
+| 01 | [Salesforce OBT Analytics](./projects/snowflake-analytics/) | Snowflake · SQL | Denormalized One Big Table — leads, opps, accounts, contracts |
+| 02 | [Workato Usage Pipeline](./projects/workato-pipelines/) | Workato · Snowflake | Recipe & connection usage ETL with incremental loading + error handling |
+| 03 | [Semantic Model Matching](./projects/python-engineering/) | Python · YAML | Automated semantic layer column matcher for Data Genie / MCP |
+| 04 | [BI Dashboard Suite](./projects/bi-dashboards/) | Sigma · Snowflake | ARR, pipeline health, platform adoption & CS ticket dashboards |
+| 05 | [dbt Models — Multi-Source](./projects/dbt-models/) | dbt · Snowflake | Staging → intermediate → marts with incremental models, tests & dummy seed data |
+| 06 | [Black Box — VQR Scorer](./projects/black-box-vqr/) | Python · GitHub API | 6-signal confidence scorer; auto-pushes ≥90/100 queries to VQR GitHub repo |
+
+---
+
+## Tech Stack
+
+```sql
+SELECT category, skill, proficiency FROM prateek.skills ORDER BY category, proficiency DESC;
+```
+
+### Data Warehousing
+| Skill | Proficiency |
+|-------|-------------|
+| Snowflake (Snowpipe, Streams & Tasks, Dynamic Tables, RBAC, PII Masking) | ★★★★★ |
+| BigQuery | ★★★★☆ |
+| Apache Iceberg (via Snowflake external volumes) | ★★★☆☆ |
+
+### Pipelines & ETL/ELT
+| Skill | Proficiency |
+|-------|-------------|
+| Workato (recipes, SDK, MCP, AI tools) | ★★★★★ |
+| AWS Glue (PySpark) | ★★★★☆ |
+| Kafka Connect / Debezium (CDC) | ★★★★☆ |
+| Airflow / Dagster | ★★★★☆ |
+| Hevo ETL · Informatica IICS · DataStage | ★★★☆☆ |
+
+### Transformation & Modeling
+| Skill | Proficiency |
+|-------|-------------|
+| dbt Cloud & dbt Mesh (incremental, macros, hooks, CI/CD) | ★★★★★ |
+| Star Schema · Dimensional Modeling · SCD Type 2 | ★★★★★ |
+| SQL (window functions, CTEs, complex joins, stored procedures) | ★★★★★ |
+
+### Languages & Cloud
+| Skill | Proficiency |
+|-------|-------------|
+| Python (Snowpark, Pandas, PySpark) | ★★★★☆ |
+| AWS (S3, RDS, Glue, SNS) | ★★★★☆ |
+| GCP (BigQuery, GCS, Data Transfer Service) | ★★★☆☆ |
+
+### BI & AI Tools
+| Skill | Proficiency |
+|-------|-------------|
+| Sigma | ★★★★★ |
+| Tableau | ★★★★☆ |
+| Workato MCP · Claude AI · Data Genie · Snowflake Cortex | ★★★★☆ |
+
+---
+
+## Certifications
+
+- ✅ Snowflake Bootcamp (2024)
+- ✅ SQL & Python Bootcamp (2023)
 
 ---
 
@@ -36,39 +95,21 @@ Analytics Engineer at **Workato** (Business Intelligence team), working across t
 ```
 analytics-portfolio/
 ├── projects/
-│   ├── snowflake-analytics/     # SQL models & OBT design
-│   ├── workato-pipelines/       # ETL recipe documentation
-│   ├── python-engineering/      # Python scripts & automation
-│   └── bi-dashboards/           # Dashboard specs & screenshots
+│   ├── snowflake-analytics/     # OBT SQL models — Salesforce
+│   ├── workato-pipelines/       # ETL architecture & error handling
+│   ├── python-engineering/      # Semantic model matcher (Python)
+│   ├── bi-dashboards/           # Dashboard specs & metric definitions
+│   ├── dbt-models/              # Full dbt project with dummy seed data
+│   └── black-box-vqr/           # Query confidence scorer + VQR pusher
 ├── assets/                      # Diagrams, ERDs, screenshots
 └── README.md
 ```
 
 ---
 
-## Tech Stack
-
-```sql
-SELECT skill, proficiency FROM prateek.skills
-ORDER BY proficiency DESC;
-```
-
-| Skill | Proficiency | Use Case |
-|-------|-------------|----------|
-| Snowflake SQL | ★★★★★ | Data modeling, query optimization, OBT design |
-| Workato | ★★★★★ | ETL pipelines, API integrations, automation |
-| Python | ★★★★☆ | Semantic matching, data processing scripts |
-| Sigma | ★★★★☆ | Self-serve BI, executive dashboards |
-| dbt | ★★★☆☆ | Incremental models, testing, documentation |
-| Git | ★★★★☆ | Version control, CI/CD for data pipelines |
-
----
-
 ## Connect
 
-- 💼 [LinkedIn](https://linkedin.com/in/prateekchopra)
-- 📧 prateek@workato.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/prateek-chopra-64ab85189/)
+- 📧 prateekchopra18@gmail.com
+  
 
----
-
-*Built with SQL, Python, and a lot of `COUNT(DISTINCT ...)`*
